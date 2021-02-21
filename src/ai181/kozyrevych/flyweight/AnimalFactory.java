@@ -15,7 +15,7 @@ public class AnimalFactory {
             } else if (type.equals("dog")) {
                 animal = new Dog();
             } else {
-                throw new IllegalArgumentException("Incorrect type");
+                throw new IllegalArgumentException("Incorrect input type");
             }
             animals.put(type, animal);
         }
