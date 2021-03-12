@@ -1,5 +1,7 @@
 package ai181.kozyrevych.decorator;
 
+import java.io.FileInputStream;
+
 public class BigObject extends ObjectDecorator {
     public BigObject(JavaObject obj) {
         super(obj);
@@ -11,6 +13,6 @@ public class BigObject extends ObjectDecorator {
 
     @Override
     public String getInfo() {
-        return super.getInfo() + getBigObjectInfo();
+        return obj.getInfo() + getBigObjectInfo();
     }
 }

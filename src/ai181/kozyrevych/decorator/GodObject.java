@@ -7,7 +7,7 @@ public class GodObject extends ObjectDecorator {
 
     @Override
     public String getInfo() {
-        return super.getInfo() + getGodObjectInfo();
+        return obj.getInfo() + getGodObjectInfo();
     }
 
     private String getGodObjectInfo() {
