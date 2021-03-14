@@ -13,7 +13,14 @@ public class SomeFile implements MyFile {
         System.out.println(name);
     }
 
-    public String getFileName() {
-        return name;
+    @Override
+    public void addFile(MyFile f) {
+        throw new UnsupportedOperationException();
     }
+
+    @Override
+    public void removeFile(MyFile f) {
+        throw new UnsupportedOperationException();
+    }
+
 }
